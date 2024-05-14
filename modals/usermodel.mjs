@@ -7,6 +7,6 @@ const userschema = mongoose.Schema({
     Name: { type: String }
 })
 
-  const user = mongoose.model("user", userschema)
+  const User = mongoose.model("Users", userschema)
 
-export default user
+export default User

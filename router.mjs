@@ -1,11 +1,10 @@
 import express from 'express'
-import { posttaskfunction } from "./controler/addtask.mjs"
-import { login } from "./controler/controlerlog.mjs"
-import { Schemafunction } from "./controler/controlersignup.mjs"
-import { getfunction } from "./controler/gettask.mjs"
-import { normalfunction } from "./controler/removetask.mjs"
-import { Router } from 'express'
-
+import { posttaskfunction } from "./controler/taskcontroler.mjs"
+import { login } from "./controler/userscontroler.mjs"
+import { Schemafunction } from "./controler/userscontroler.mjs"
+import { getfunction } from "./controler/taskcontroler.mjs"
+import { normalfunction } from "./controler/taskcontroler.mjs"
+// import { Router } from 'express'
 const router = express.Router()
 router.route('/sin').post(login)
 router.route('/pull').post(Schemafunction)
